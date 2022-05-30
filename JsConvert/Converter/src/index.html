@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar__color">
+        <div class="container">
+           <div class="navbar">
+                <div class="navbar__logo">
+                    <img src="/src/img/logo.png">
+                </div>
+                <div class="navbar__ul">
+                    <ul >
+                        <li>БАНК</li>
+                        <li>БИЗНЕС</li>
+                        <li>ИНВЕСТИЦИИ</li>
+                        <li>СТРАХОВАНИЕ</li>
+                        <li>МОБАЙЛ</li>
+                        <li>ПУТЕШЕСТВИЯ</li>
+                        <li>РАЗВЛЕЧЕНИЯ</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div  class="main__text">
+            <p>Конвертер валют онлайн</p>
+        </div>
+        <div class="left">
+            <p class="text">У меня есть </p>
+            <div class="button__block">
+                <input type="radio" id="RUB" value="RUB" class="left1" name="fromleft" checked="checked">
+                <label for="RUB">RUB</label>
+                <input type="radio" id="USD" value="USD" class="left1" name="fromleft" >
+                <label for="USD">USD</label>
+                <input type="radio" id="EUR" value="EUR" class="left1" name="fromleft">
+                <label for="EUR">EUR</label>
+                <input type="radio" id="GBP" value="GBP" class="left1" name="fromleft">
+                <label for="GBP">GBP</label>
+            </div>
+            <div class="input__space">
+                <input type="number" class="currency1" id="currency__input" name="input1" placeholder=" Введите валюту" required
+                    minlength="1" maxlength="16">
+                    <p class="p__text" id="legend"></p>
+            </div>
+        </div>   
+ 
+        <div class="right">
+            <p class="text">Хочу приобрести</p>
+            <div class="button__block">
+                <input type="radio" id="RUB2" value="RUB" class="right1" name="toright">
+                <label for="RUB2">RUB</label>
+                <input type="radio" id="USD2" value="USD" class="right1" name="toright"  checked="checked">
+                <label for="USD2">USD</label>
+                <input type="radio" id="EUR2" value="EUR" class="right1" name="toright">
+                <label for="EUR2">EUR</label>
+                <input type="radio" id="GBP2" value="GBP" class="right1" name="toright">
+                <label for="GBP2">GPB</label>
+            </div>
+            <div class="input__space">
+                <input type="number" class="currency1" id="currency__input" name="input1" placeholder=" Введите валюту" required
+                    minlength="1" maxlength="16">
+                <p class="p__text" id="legend2"></p>
+            </div>
+        </div>
+    </div>
+<script src="index.mjs" type="module"></script>
+</body>
+</html>
